@@ -29,5 +29,5 @@ function commitAndPush() {
 // Planifie l'exécution du script tous les jours à minuit (00:00)
 // const cron = require("node-cron");
 // cron.schedule("0 0 * * *", commitAndPush);
-
+commitAndPush();
 console.log("Script scheduled to run daily at midnight (00:00).");
