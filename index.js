@@ -1,9 +1,9 @@
-const { execSync } = require("child_process");
+//const { execSync } = require("child_process");
 const fs = require("fs");
 //const moment = require("moment");
 
 // const repoPath = "/"; // Remplacez par le chemin absolu de votre répertoire Git local
-const commitMessage = "Message du commit quotidien";
+//const commitMessage = "Message du commit quotidien";
 // const branchName = "main";
 const filePath = "append.md"; // Chemin relatif vers le fichier que vous souhaitez modifier
 
@@ -24,11 +24,11 @@ function commitAndPush() {
 
     // Ajouter les modifications et faire un commit
     //execSync(`cd ${repoPath} && git add . && git commit -m "${commitMessage}"`);
-    execSync(`git add . && git commit -m "${commitMessage}"`);
+    //execSync(`git add . && git commit -m "${commitMessage}"`);
 
     // Push vers la branche spécifiée
     //execSync(`cd ${repoPath} && git push origin ${branchName}`);
-    execSync(`git push`);
+    //execSync(`git push`);
 
     console.log("Commit and push successful.");
   } catch (error) {
