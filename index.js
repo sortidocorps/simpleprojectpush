@@ -17,7 +17,7 @@ function commitAndPush() {
     // Modifier le fichier
     fs.appendFileSync(
       filePath,
-      `\n${currentDate} du modification quotidienne à ${currentTime}.\n`
+      `\n${currentDate} du modification quotidienne à ${currentTime}.\n `
     );
 
     // Ajouter les modifications et faire un commit
