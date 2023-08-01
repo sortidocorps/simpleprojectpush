@@ -1,6 +1,6 @@
 const { execSync } = require("child_process");
 const fs = require("fs");
-const moment = require("moment");
+//const moment = require("moment");
 
 // const repoPath = "/"; // Remplacez par le chemin absolu de votre répertoire Git local
 const commitMessage = "Message du commit quotidien";
@@ -11,13 +11,15 @@ const filePath = "append.md"; // Chemin relatif vers le fichier que vous souhait
 function commitAndPush() {
   try {
     // Obtenir la date et l'heure actuelles
-    const currentDate = moment().format("YYYY-MM-DD");
-    const currentTime = moment().format("HH:mm:ss");
+    // const currentDate = moment().format("YYYY-MM-DD");
+    // const currentTime = moment().format("HH:mm:ss");
+    // Obtenir la date et l'heure actuelles
+    const currentDateAndTime = new Date().toString();
 
     // Modifier le fichier
     fs.appendFileSync(
       filePath,
-      `\n${currentDate} du modification quotidienne à ${currentTime}.\n `
+      `\n${currentDateAndTime} du modification quotidienne.\n `
     );
 
     // Ajouter les modifications et faire un commit
