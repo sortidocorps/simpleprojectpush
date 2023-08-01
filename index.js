@@ -2,9 +2,9 @@ const { execSync } = require("child_process");
 const fs = require("fs");
 const moment = require("moment");
 
-const repoPath = "/"; // Remplacez par le chemin absolu de votre répertoire Git local
+// const repoPath = "/"; // Remplacez par le chemin absolu de votre répertoire Git local
 const commitMessage = "Message du commit quotidien";
-const branchName = "main";
+// const branchName = "main";
 const filePath = "append.md"; // Chemin relatif vers le fichier que vous souhaitez modifier
 
 // Fonction pour effectuer le commit et le push
