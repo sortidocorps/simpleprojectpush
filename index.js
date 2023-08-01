@@ -9,27 +9,27 @@ const filePath = "append.md"; // Chemin relatif vers le fichier que vous souhait
 
 // Fonction pour effectuer le commit et le push
 function commitAndPush() {
-    try {
-      // Obtenir la date et l'heure actuelles
-      const currentDate = moment().format("YYYY-MM-DD");
-      const currentTime = moment().format("HH:mm:ss");
-        
-      // Modifier le fichier
-      fs.appendFileSync(
-        filePath,
-        `\nModification quotidienne du ${currentDate} à ${currentTime}.`
-      );
+  try {
+    // Obtenir la date et l'heure actuelles
+    const currentDate = moment().format("YYYY-MM-DD");
+    const currentTime = moment().format("HH:mm:ss");
 
-      // Ajouter les modifications et faire un commit
-      //execSync(`cd ${repoPath} && git add . && git commit -m "${commitMessage}"`);
-      execSync(`git add . && git commit -m "${commitMessage}"`);
+    // Modifier le fichier
+    fs.appendFileSync(
+      filePath,
+      `\n${currentDate} du modification quotidienne à ${currentTime}.`
+    );
 
-      // Push vers la branche spécifiée
-      //execSync(`cd ${repoPath} && git push origin ${branchName}`);
-      execSync(`git push`);
+    // Ajouter les modifications et faire un commit
+    //execSync(`cd ${repoPath} && git add . && git commit -m "${commitMessage}"`);
+    execSync(`git add . && git commit -m "${commitMessage}"`);
 
-      console.log("Commit and push successful.");
-    } catch (error) {
+    // Push vers la branche spécifiée
+    //execSync(`cd ${repoPath} && git push origin ${branchName}`);
+    execSync(`git push`);
+
+    console.log("Commit and push successful.");
+  } catch (error) {
     console.error("Error occurred:", error);
   }
 }
