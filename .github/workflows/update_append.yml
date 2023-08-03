@@ -1,4 +1,4 @@
-name: Update README all day at 04:04
+name: Update append file all day
 
 on:
   push:
