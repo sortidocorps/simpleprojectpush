@@ -99,7 +99,6 @@
     crs:ColorGradeMidtoneHue="35"
     crs:ColorGradeMidtoneSat="8"
     crs:Sharpness="40"
-    crs:LuminanceAdjustmentBlue="-5"
     crs:ToneCurveName2012="Custom"
     crs:CameraProfile="Adobe Standard"
     crs:CameraProfileDigest="54650A341B5B5CCAE8442D0B43A92BCE"
